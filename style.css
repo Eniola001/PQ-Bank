@@ -99,71 +99,69 @@ button:hover {
     width: auto;
 }
 
-/* Media queries for responsive design */
+/* Media Queries for Responsive Design */
 
-/* For screen sizes between 480px and 768px */
-@media screen and (max-width: 768px) {
+/* Small screens (0 to 480px) */
+@media only screen and (max-width: 480px) {
     nav {
-        padding: 1rem 5rem;
+        padding: 1rem 2rem; /* Adjust padding for smaller screens */
+    }
+
+    .nav-logo img {
+        width: 4rem; /* Decrease logo size */
     }
 
     .nav-links {
-        margin-right: 0;
+        margin-right: 0.5rem; /* Reduce margin between nav links */
+        font-size: 1.2rem; /* Decrease font size for nav links */
     }
 
     .nav-links li {
-        margin-right: 2rem;
+        margin-right: 2rem; /* Adjust margin for smaller screens */
     }
 
     .header-content {
-        margin: 2.4rem 5rem 0 5rem;
+        margin: 2.4rem 2rem 0 2rem; /* Adjust margin for smaller screens */
+        flex-direction: column; /* Stack header content vertically */
+        align-items: center; /* Center align header content */
     }
 
     .header-text {
-        width: 55%;
+        width: 80%; /* Occupy more width on smaller screens */
+        text-align: center; /* Center align text */
     }
 
     .header-text h1 {
-        font-size: 3rem;
+        font-size: 2.8rem; /* Decrease font size */
     }
 
     .header-text h5 {
-        font-size: 1.4rem;
+        font-size: 1.4rem; /* Decrease font size */
+        padding-bottom: 1.5rem; /* Adjust padding */
     }
 
     button {
-        font-size: 1.2rem;
-        padding: 1rem 1.5rem;
+        font-size: 1.2rem; /* Decrease button font size */
     }
 
     .header-image img {
-        height: 30rem;
+        height: auto; /* Allow image to scale based on width */
+        width: 80%; /* Occupy most of the container width */
+        max-height: 30rem; /* Set maximum height */
     }
 }
 
-/* For screen sizes between 768px and 1024px */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    nav {
-        padding: 1rem 8rem;
-    }
+/* Medium screens (481px to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Add styles for medium-sized screens if needed */
+}
 
-    .nav-links li {
-        margin-right: 3rem;
-    }
+/* Large screens (769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Add styles for large-sized screens if needed */
+}
 
-    .header-content {
-        margin: 2.4rem 8rem 0 8rem;
-    }
-
-    .header-text h1 {
-        font-size: 3.2rem;
-    }
-
-    .header-text h5 {
-        font-size: 1.5rem;
-    }
-
-    .header-image img {
-        height: 35rem;
-    }
+/* Larger screens (1025px and above) */
+@media only screen and (min-width: 1025px) {
+    /* Add styles for larger screens if needed */
 }
