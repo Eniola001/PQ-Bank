@@ -120,6 +120,10 @@ button:hover {
         margin-right: 2rem; /* Adjust margin for smaller screens */
     }
 
+    header {
+        height: 85vh;
+    }
+
     .header-content {
         margin: 2.4rem 2rem 0 2rem; /* Adjust margin for smaller screens */
         flex-direction: column; /* Stack header content vertically */
@@ -142,12 +146,16 @@ button:hover {
 
     button {
         font-size: 1.2rem; /* Decrease button font size */
+        margin: 0 auto; /* Center the button */
     }
+
+    .header-image{ text-align: center; /* Center the image */}
 
     .header-image img {
         height: auto; /* Allow image to scale based on width */
         width: 80%; /* Occupy most of the container width */
         max-height: 30rem; /* Set maximum height */
+        margin-top: 20px;
     }
 }
 
